@@ -56,9 +56,7 @@ function Shopify(options) {
   };
 
   this.baseUrl = {
-    hostname: !options.shopName.endsWith('.myshopify.com')
-      ? `${options.shopName}.myshopify.com`
-      : options.shopName,
+    hostname: options.shopName,
     protocol: 'https:'
   };
 
